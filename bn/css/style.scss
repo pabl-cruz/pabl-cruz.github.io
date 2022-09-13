@@ -1,0 +1,392 @@
+/*ESTILOS GENERALES DEL SITIO Y APLICADOS A index.html */
+
+$fontIBM: 'IBM Plex Sans';
+$azulOscuro: #021421;
+$celesteNeon: #62F4F5;
+$cian: #3cbffc;
+$verde_Neon: #49f998;
+$verdeBlanco: #EBFAF0;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $verdeBlanco;
+    color: $azulOscuro;
+}
+
+h2{
+    font-size: 40px;
+    padding-top: 163px;
+    padding-bottom: 163px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+        color: $celesteNeon;
+    } 
+}
+
+h1,h2,h3,h4,h5,a, #mensaje b, #industrias b {
+    font-family: $fontIBM; 
+}
+
+h1,h2,h3,h4, #mensaje b{
+    font-weight: 700;
+}
+
+h2,h3,h4{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    line-height: 1.9;
+}
+
+img, #atributos svg{
+    margin: 0 auto;
+}
+
+p, li, b, label, .nav-link, #servicios a, .btn {
+    font-family: 'Kumbh Sans';
+}
+
+label, img, #atributos svg{
+    display: flex;
+}
+
+footer{
+    h4{
+        text-align: left;
+    }
+    a{
+        color: $verdeBlanco;
+    }
+}
+
+footer .container, footer .row{
+    max-width: initial;
+    padding-left: 0;
+    height: auto;
+}
+
+footer .row, figure{
+    margin: 0;
+}
+
+input, select{
+    height: 30px;
+}
+
+input, select, textarea{
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: $cian;
+}
+
+#navbarT a{
+    color: $azulOscuro;
+    &:hover{
+        color: $azulOscuro;
+        background-color: $celesteNeon;
+        text-decoration: underline;
+    }
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 20px;
+    background-color: $verde_Neon;
+    border-radius: 0;
+    margin-top: 61px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 205px;
+    &:hover{
+        background-color: $celesteNeon
+    }
+}
+
+.roo{
+    width: 150px;
+}
+
+label, .nav-link{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.jumbotron{
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0px;
+    transition: 1s ease-in-out;
+    .btn{
+        float: none;
+    }
+}
+
+.col-lg{
+    flex-basis: 31%;
+}
+
+.row-cols-3 div{
+    flex: 0 0 31%;
+}
+
+.servTile{
+    background-color: $verde_Neon;
+    height: 400px;
+    flex: 0 0 33.333%;
+    max-width: 32.282%;
+    &:hover{
+        background-color: $celesteNeon;
+    }
+}
+
+.cuadroServ{
+    color: $azulOscuro;
+    &:hover{
+        color: $azulOscuro;
+    }
+  
+}
+
+.cuadroAttr{
+    flex: 0 0 50%;
+    max-width: 49.168%;
+}
+
+.cuadroInd, #mensaje, .inferior{
+    background-color: $cian;
+}
+
+.cuadroAttr div{
+    margin-left: 35%;
+}
+
+#navbarT{
+    justify-content: flex-end;
+}
+
+#mensaje{
+    font-size: 32px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#mensaje div{
+    margin-left: 8.5vw;
+}
+
+footer, .cuadroAttr, #contacto, #equipo, #contactoCont, .tarjeta{
+    background-color: $azulOscuro;
+    color: $verdeBlanco;
+    margin: 0 auto;
+}
+
+#servicios a{
+    font-size: 35px;
+    font-weight: 700;
+    }
+
+
+#contactoCont, #jumboCont, #mensaje b, nav {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#jumboCont{
+    margin-top: 25vh;
+}
+
+#contacto h2{
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+#contactoCont{
+    width: 55%;
+}
+
+#bnCaja{
+    width: 347px;
+}
+
+#servicios, #equipo, #aviso, #industrias, #atributos p{
+    text-align: center;
+}
+
+#industrias{
+    font-size: 28px;
+}
+
+#empleo{
+    padding-bottom: 300px;
+}
+
+.btn{
+    float: right;
+}
+
+#contacto{
+    padding-bottom: 210px;
+}
+
+#bnCaja{
+    background-color: $verdeBlanco;
+}
+
+#aviso{
+    background-color: $verde_Neon;
+    color: $azulOscuro;
+}
+
+#tituloJumbo{
+    margin-left: 0;
+    transition: width .75s ease-out;
+}
+
+.caja-transparente{
+    background-color: rgba(245, 255, 248, 0.58);
+}
+
+.titulo{
+    font-size: 48px;
+    padding-top: 82px;
+    padding-bottom: 56px;
+}
+
+/*MEDIA QUERIES APLICADOS A ELEMENTOS GENERALES DEL SITIO */
+
+@media screen and (max-width: 1039px){
+    #bnCaja{
+        width: 100%;
+        margin: 0 auto!important;
+    }
+}
+
+/*MEDIA QUERIES APLICADOS A index.html*/
+
+@media screen and (max-width: 992px) {
+    .cuadroAttr, .servTile{
+        flex: none;
+    }
+
+    .servTile{
+        max-width: 80%;
+    }
+
+    .cuadroAttr{
+        max-width: 100%;
+    }
+
+    .row-cols-3 div{
+        flex: 0 0 46%;
+    }
+}
+
+/*TRANSICIONES Y ANIMACIONES COMUNES*/
+
+.servTile, .nav-link, a{
+    transition: .2s ease-in;
+}
+
+/* ESTILOS COMUNES APLICADOS A PÁGINAS QUE NO SON index.html */
+
+.caja-transparente{
+    width: fit-content;
+    margin-left: 11vw;
+}
+
+#fondoServicios, #fondoTrabajo{
+    background-repeat: no-repeat;
+    height: 227px;
+
+}
+
+/* ESTILOS APLICADOS A quienes-somos.html */
+
+h5 {
+    font-size: 34px;
+    color: $cian;
+    font-weight: 300;
+}
+
+#historia{
+    p{
+        font-size: 18px;
+    }
+    div{
+        margin-right: 0px;
+    }
+} 
+    
+
+#equipo{
+    padding-bottom: 120px;
+}
+
+/* ESTILOS APLICADOS A servicios.html */
+
+.tarjeta{
+    height: 763px;
+    padding-right: 0px;
+}
+
+.superior{
+    height: 363px;
+    h2{
+        padding-top: 72px;
+    }
+    svg, i{
+        margin-top: 86px;
+        color: $verde_Neon;
+    }
+}
+
+.inferior{
+    height: 400px;
+    float: right;
+    ul{
+        margin-top:40px;
+        li{
+            color: $azulOscuro;
+            list-style-image: url('../img/square-list.png');;
+            list-style-position: inside;
+        }
+    }  
+}
+
+#fondoServicios{
+    background-image: url(../img/banner-servicios.jpg);
+}
+
+/* ESTILOS APLICADOS A empleos.html */
+
+#fondoTrabajo{
+    background-image: url(../img/banner-empleos.jpg);
+}
+
+#seccionTrabajo{
+    margin-bottom: 163px;
+}
+
+#cv{
+    border-style: none;
+    border: none;
+}
