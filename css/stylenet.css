@@ -50,6 +50,17 @@ a{
     }
 }
 
+@media screen and (max-width: 475px){
+    .net-button{
+        margin: 5px;
+    }
+    
+    #logo{
+        position: unset;
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 1000px){
     #menuNav{
         z-index: 99;
