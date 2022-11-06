@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Pablo Cruz Salinas">
+    <meta name="description" content="Test HTML/CSS Netwalker">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" type="image/x-icon" href="img/favicon-net.ico">
+     <script src="https://kit.fontawesome.com/7888b3c04e.js" crossorigin="anonymous"></script>
+    <title>Documento con opción de descarga</title>
+  </head>
+  <body>
+   <header>
+        <nav class="navbar flex-column container-fluid py-0">
+           <div class="container-fluid d-flex justify-content-end bg-dark">
+               <ul class="nav">
+                <li class="nav-item px-2"><a class="link-light" href="#">Soporte Interno</a></li>
+                <li class="nav-item px-2"><a class="link-light" href="#">Cerrar Adm</a></li>
+            </ul>
+           </div>
+               
+            <div class="navbar navbar-expand-lg container-fluid py-0" id="secondBar">
+                 <a href="#"><img class="navbar-brand nav py-0" id="logo" src="img/logo.PNG" alt="logo netwalker"></a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+           <div class="collapse navbar-collapse justify-content-end px-lg-2" id="menuNav">
+               <ul class="navbar-nav pt-4 pt-lg-2">
+                <li class="nav-item dropdown py-2 ps-3 px-md-2">
+                    <a href="#" class="dropdown-toggle" id="solicitudeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Solicitudes</b></a>
+                    <ul class="dropdown-menu" aria-labelledby="solicitudeDropdown">
+                         <li class="dropdown-item py-2 px-md-2"><a href="#">Mis Solicitudes</a></li>
+                         <li class="dropdown-item py-2 px-md-2"><a href="#">Solicitudes 2</a></li>
+                         <li class="dropdown-item py-2 px-md-2"><a href="#">Solicitudes 3</a></li>
+                    </ul>
+                </li>
+                 <li class="nav-item dropdown py-2 ps-3 px-md-2"><a href="#" class="dropdown-toggle" id="searchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Buscar</b></a>
+                     <ul class="dropdown-menu" aria-labelledby="searchDropdown">
+                          <li class="dropdown-item py-sm-2 px-md-2"><a href="#">Buscar Documento</a></li>
+                          <li class="dropdown-item py-sm-2 px-md-2"><a href="#">Buscar Alumno</a></li>
+                     </ul>
+                 </li>
+                <li class="nav-item py-2 ps-3 px-md-2"><a href="#"><b>LEM</b></a></li>
+                <li class="nav-item py-2 ps-3 px-md-2"><a href="#"><b>Informes</b></a></li>
+                <li class="nav-item py-2 ps-3 px-md-2"><a href="#"><b>Configuración</b></a></li>
+            </ul>
+           </div>
+            </div>
+        </nav> 
+   </header>
+    <main class="container m-auto">
+        <section class="card col-lg-10 col-12 mx-auto mt-4 mb-4">
+           <div class="card-header">
+               <h1 class="card-title">Solicitante #101047</h1>
+            </div>
+            <div>
+                <ul class="list-group py-0">
+                    <li class="list-group-item"><b>Alumno:</b> JORGE PEREZ (jperez)</li>
+                    <li class="list-group-item"><b>RUN:</b> 10.333.333-3</li>
+                </ul>
+            </div>
+            <div class="mx-3">
+                <button class="btn net-button">Documentos</button>
+                <button class="btn net-button">Nuevo Documento</button>
+                <button class="btn net-button">Nueva Solicitud</button>
+            </div>
+        </section>
+        <section class="card col-lg-10 col-12 mx-auto my-4">
+            <div class="card-header"><h3 class="card-title">Sólo alumnos Titulados - Certificados de Título - Certificado de Título y Grado - INGENIERO INDUSTRIAL</h3></div>
+            <h3 class="card-title mx-3 mt-2">Información de Solicitud</h3>
+            <ul class="py-0 list-group">
+                <li class="list-group-item"><b>Folio:</b> 882089</li>
+                <li class="list-group-item"><b>Fecha de Solicitud:</b> 18-06-2016 10:54</li>
+                <li class="list-group-item"><b>Responsable:</b> Soporte Interno</li>
+                <li class="list-group-item"><b>Título:</b> INGENIERO INDUSTRAL</li>
+                <li class="list-group-item"><b>Fecha Titulación:</b> 18 de Junio de 2016</li>
+                <li class="list-group-item"><b>Resolución: 70117/2016</b></li>
+            </ul>
+        </section>
+        <section class="card col-lg-10 col-12 mx-auto mt-4">
+            <div class="card-header"><h3 class="card-title">Certificado Descarga</h3></div>
+            <div class="d-flex flex-column mx-3 py-2">
+            <b>Descargar certificado en formato PDF.</b>
+            <button class="btn btn-primary col-md-3 col-10"><i class="fas fa-file-pdf"></i> Descargar</button>
+            <b>Verificación Hasta:</b>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light container-fluid mx-auto text-center mt-5"><p class="pt-1 mb-0">Desarrollado por Pablo Cruz para prueba de postulación a Netwalker. 2022.</p></footer>
+  </body>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
