@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,209 +6,38 @@
     <meta charset="UTF-8">
     <meta name="description" content="Portafolio de sitios web del diseñador y desarrollador web Pablo Cruz">
     <meta name="author" content="Pablo Cruz">
-    <meta name="keywords" content="portfolio, portafolio, web-design, web-development, diseño-web, desarrollo-web, ai, seo">
+    <meta name="keywords" content="portfolio, portafolio, web-design, web-development, diseño-web, desarrollo-web, ia, seo, ux/ui">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pablo Cruz - Portafolio</title>
+    <title>Pablo Cruz - En Reconstrucción</title>
     <link rel="icon" type="img/svg" href="img/logo-pc.svg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/7888b3c04e.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/script.js"></script>
 </head>
 
-<body>
-    <header>
+<body class="reveal">
+    <main class="row">
+        <div><img src="img/logo-pc.svg" alt="logo pablo cruz" id="logo"></div>
         <div id="contenedor-linea">
-            <h1>Pablo Cruz</h1>
-            <img src="img/logo-pc.svg" alt="logo pablo cruz" id="logo">
+            <h1>Pablo Cruz Salinas</h1>
+            <h2>Sitio en Re-Construcción</h2>
+            <P>Por mientras puedes ver:</P>
+            <div id="lista-hor">
+                <ul>
+                    <li><a href="https://behance.net/urqueh" target="_blank">Mi Behance</a><span> | </span></li>
+                    <li><a href="https://www.linkedin.com/in/pablo-cruz-salinas-171271200/" target="_blank">Mi LinkedIn</a><span> | </span></li>
+                    <li><a href="mailto:pablo.cruz2497@gmail.com">O enviarme un correo</a></li>
+                </ul>
+            </div>
         </div>
-        <button type="button" id="menuBot">
-            <i class="fas fa-bars fa-3x"></i>
-        </button>
-        <nav id="menu">
-            <p id="textoMenu">Menú</p>
-            <ul id="listaMenu">
-                <li><button class="lista" id="btnSobre">Sobre mí</button></li>
-                <li><button class="lista" id="btnProy">Proyectos</button></li>
-                <li><a class="lista" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="contenedor">
-            <div id="resumen">
-                <div id="contenedorMsg">
-                    <strong>
-                        Desarrollador y Diseñador web front-end ubicado en Santiago, Chile.
-                    </strong>
-                </div>
-            </div>
-            <div id="sobre">
-                <div class="contenedor">
-                    <figure>
-                        <img src="img/profile.jpg" alt="pablo">
-                    </figure>
-                    <p id="mensaje">Tengo 25 años, soy titulado de la carrera de Desarrollo y Diseño Web de DUOC UC, y también me dedico a la pintura digital y la ilustración. Mi especialidad se centra en el diseño y maquetación de sitios web a través de métodos UI/UX,
-                        como también el desarrollo desde front-end usando HTML+CSS y Javascript.</p>
-                </div>
-            </div>
-            <div id="proyectos">
-                <h2>Proyectos</h2>
-                <div class="pagina">
-                    <a href="https://pabl-cruz.github.io/bn.html">
-                        <img src="img/bn.jpg" alt="BN">
-                    </a>
-                    <div class="proyecto-fila">
-                        <h3>BN Logística</h3>
-                        <p class="fecha">2020/10</p>
-                        <p>Landing page para empresa que ofrece servicios de logística.</p>
-                        <div class="detalles">
-                            <div class="leng">
-                                <h5>Hecho con:</h5>
-                                <ul>
-                                    <li>HTML/CSS</li>
-                                    <li>Wordpress</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </div>
-                            <div class="frame">
-                                <h5>Frameworks:</h5>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                    <li>jQuery</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="pagina">
-                    <a href="https://www.pcruz.laboratoriodiseno.cl/wordpress/urqueh">
-                        <img src="img/urqueh.jpg" alt="urqueh">
-                    </a>
-                    <div class="proyecto-fila">
-                        <h3>Urqueh</h3>
-                        <p class="fecha">2020/11</p>
-                        <p>Portafolio y galería de obras del artista digital Urqueh.</p>
-                        <div class="detalles">
-                            <div class="leng">
-                                <h5>Hecho con:</h5>
-                                <ul>
-                                    <li>HTML/CSS</li>
-                                    <li>Wordpress</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </div>
-                            <div class="frame">
-                                <h5>Frameworks:</h5>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                    <li>jQuery</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-                <div class="pagina">
-                    <a href="https://www.myspeakingclub.cl">
-                        <img src="img/msc.JPG" alt="My Speaking Club">
-                    </a>
-                    <div class="proyecto-fila">
-                        <h3>My Speaking Club</h3>
-                        <p class="fecha">2021/05</p>
-                        <p>Sitio que entrega cursos de inglés en formato de autoinstrucción.</p>
-                        <div class="detalles">
-                            <div class="leng">
-                                <h5>Hecho con:</h5>
-                                <ul>
-                                    <li>HTML/CSS</li>
-                                    <li>Javascript</li>
-                                    <li>PHP</li>
-                                </ul>
-                            </div>
-                            <div class="frame">
-                                <h5>Frameworks:</h5>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagina">
-                    <a href="https://www.dharmaconsulting.cl">
-                        <img src="img/dharma.JPG" alt="dharma consulting">
-                    </a>
-                    <div class="proyecto-fila">
-                        <h3>Dharma Consulting</h3>
-                        <p class="fecha">2021/08</p>
-                        <p>Sitio para consultora y asesoría/coaching para ejecutivos y líderes.</p>
-                        <div class="detalles">
-                            <div class="leng">
-                                <h5>Hecho con:</h5>
-                                <ul>
-                                    <li>HTML/CSS</li>
-                                    <li>Javascript</li>
-                                    <li>Wordpress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pagina">
-                    <a href="https://www.inproperty.cl">
-                        <img src="img/inprop.png" alt="InProperty">
-                    </a>
-                    <div class="proyecto-fila">
-                        <h3>InProperty</h3>
-                        <p class="fecha">2022/05</p>
-                        <p>Landing Page realizada para consultora y servicios de gestión inmobiliaria.</p>
-                        <div class="detalles">
-                            <div class="leng">
-                                <h5>Hecho con:</h5>
-                                <ul>
-                                    <li>HTML/CSS</li>
-                                    <li>Javascript</li>
-                                    <li>Wordpress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h2 id="contacto">Contacto</h2>
-            </div>
     </main>
     <footer>
         <div class="contenedor">
-            <div id="fila">
-                <div class="elemento-fila">
-                    <h4>Redes Sociales</h4>
-                    <ul>
-                        <li><a href="https://behance.net/urqueh" target="_blank">Behance</a></li>
-                        <li><a href="https://codepen.io/pabl-cruz">CodePen</a></li>
-                        <li><a href="https://www.linkedin.com/in/pablo-cruz-salinas-171271200/" target="_blank">LinkedIn</a></li>
-                    </ul>
-                </div>
-                <div class="elemento-fila">
-                    <h4>Correo eléctronico</h4>
-                    <p>pablo.cruz2497@gmail.com</p>
-                </div>
-                <div class="elemento-fila">
-                    <h4>Disponibilidad</h4>
-                    <p>Disponibilidad inmediata.</p>
-                    <button id="inicio">
-                        <i class="far fa-arrow-alt-circle-up fa-5x"></i>  
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="contenedor">
-            <p id="menFooter">2020-2022. Diseñado y desarrollado por Pablo Cruz Salinas</p>
+            <h4>©2022-2024 Pablo Cruz</h4>
         </div>
     </footer>
 </body>
-
+<script src="js/script.js"></script>
 </html>
