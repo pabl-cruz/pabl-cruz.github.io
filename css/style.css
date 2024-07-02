@@ -70,15 +70,14 @@ footer{
    margin: 0 auto;
 }
 
-.row{
-   display: flex;
+.box{
    align-items: center;
-   margin: 32vh 28.5vw 0vh;
    justify-content: center;
    background-color: #FFFFFF;
    box-shadow: #7c7c7c 0px 4px 8px;
    border: solid 0px;
    border-radius: 5px;
+   margin-top: 30vh;
  }
 
 .row div{
@@ -87,6 +86,7 @@ footer{
 
  #logo{
     width: 100%;
+    border-radius:4px 0px 0px 4px;
  }
 
 
@@ -97,42 +97,39 @@ footer{
  }
 
 
+#lista-hor span{
+   width: 1%;
+}
+
  #contenedor-linea{
-   padding: 0em 3em 1em;
+   padding: 0em 4em 1em 2.5em;
  }
 
 
- @media screen and (max-width: 1600px){
-   .row{
-      margin: 32vh 23vw 0vh; 
-   }
- }
 
- @media screen and (max-width: 1366px){
-   .row{
-      margin: 32vh 19vw 0vh; 
-   }
- }
-
- @media screen and (max-width: 1280px){
-   .row{
-      margin: 32vh 17vw 0vh; 
-   }
- }
-
- @media screen and (max-width: 1024px){
-   .row{
-      margin: 32vh 14vw 0vh;
+@media screen and (max-width: 1400px) {
+   #logo{
+      object-fit: cover;
+      height: 280px;
    }
 }
- @media screen and (max-width: 900px){
-   .row{
-      margin: 32vh 12vw 0vh; 
+
+ @media screen and (max-width: 992px){
+   #contenedor-linea{
+      padding: 0em 1em 1em 1em;
+    }
+
+    #lista-hor ul{
+      padding-inline-start: 0px!important;
    }
  }
 
  @media screen and (max-width: 768px){
    
+   main{
+      width: 80%!important;
+   }
+
    h1{
       font-size: 38px;
       margin-block-start: 0.7em!important;
@@ -144,23 +141,15 @@ footer{
       margin-block-start: 0.2!important;
    }
    .row{
-      margin: 15vh 10vw 0vh; 
       flex-direction: column;
    }
 
-   #lista-hor ul{
-      padding-inline-start: 0px!important;
+   .box{
+      margin-top: 9vh;
    }
 
-   #lista-hor li:nth-child(1){
-      margin: 0px 5px 0px 0px;
-   }
-
-   #lista-hor li:nth-child(2){
-      margin: 0px 5px;
-   }
-
-   #lista-hor li:nth-child(3){
-      margin: 0px 0px 0px 5px;
+   #logo{
+      object-fit: cover;
+      height: 100%;
    }
  }
