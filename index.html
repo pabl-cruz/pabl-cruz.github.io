@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portafolio de sitios web del diseñador y desarrollador web Pablo Cruz"
+    />
+    <meta name="author" content="Pablo Cruz" />
+    <meta
+      name="keywords"
+      content="portfolio, portafolio, web-design, web-development, diseño-web, desarrollo-web, ia, seo, ux/ui"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pablo Cruz - Diseñador UI y Desarrollador Front-End</title>
+    <link rel="icon" type="img/svg" href="img/logo-pc.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7888b3c04e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body class="reveal">
+    <main class="wrapper">
+      <div class="box" id="title">
+        <div><img src="img/logo-pc.svg" alt="logo pablo cruz" id="logo" /></div>
+        <div>
+          <h1>Pablo Cruz Salinas</h1>
+          <h2>Desarrollador Front-End y Diseñador UI</h2>
+          <div class="sub-info">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot icon"></i> Santiago, Chile
+              </li>
+              <li>
+                <i class="fa-solid fa-graduation-cap icon"></i> Desarrollo y
+                Diseño Web, DUOC UC
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="social">
+        <ul>
+          <li>
+            <a href="https://behance.net/urqueh" target="_blank"
+              ><i class="fa-brands fa-behance icon"></i>Revisa mi Portafolio en
+              Behance</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/pablo-cruz-salinas-171271200/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin icon"></i>Perfil de LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="mailto:pablo.cruz2497@gmail.com"
+              ><i class="fa-solid fa-envelope icon"></i>Contactame por correo</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="box" id="proyects">
+        <h2>Proyectos y trabajos</h2>
+
+        <div class="slide-container">
+          <div class="slides fade">
+            <img src="img/diphoterine.png" alt="diphoterine" />
+            <div class="titles">
+              <h3>Sitio web Diphoterine Chile <br /><span>2023</span></h3>
+            </div>
+          </div>
+          <div class="slides fade">
+            <img src="img/personalcare.png" alt="personalcare" />
+            <div class="titles">
+              <h3>PersonalCare <br /><span>2023</span></h3>
+            </div>
+          </div>
+          <div class="slides fade">
+            <img
+              src="img/quemaduratermica.png"
+              alt="quemadura termica burnshield"
+            />
+            <div class="titles">
+              <h3>
+                Quemadura Térmica, Burnshield en Chile<br /><span>2023</span>
+              </h3>
+            </div>
+          </div>
+          <div class="button-row">
+            <button class="directional-button" onclick="changeSlide(-1)">
+              <
+            </button>
+            <button class="center-button" id="modalBtn">
+              Ver más sobre proyecto
+            </button>
+            <button class="directional-button" onclick="changeSlide(1)">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="box" id="description">
+        <img src="img/profile.jpg" alt="foto de perfil" />
+        <p>
+          Diseñador y Desarrollador Web con 3 años de experiencia en
+          virtualización de cursos, diseño y desarrollo de sitios web.
+          Especialista en la mantención de servidores y actualización de sitios
+          web basados en WordPress, así como en la gestión de plataformas LMS
+          Moodle. Tengo habilidades en el diseño y desarrollo de interfaces de
+          usuario (UI) y experiencias de usuario (UX), asegurando una navegación
+          intuitiva y visualmente atractiva en mis proyectos.
+        </p>
+
+        <p>
+          Busco enfocar mi carrera en puestos de programación frontend o de
+          diseño web para contribuir con mi creatividad y habilidades técnicas
+          en la creación de soluciones web atractivas. utiles y con significado.
+        </p>
+      </div>
+      <div class="modal" id="siteModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h4>Sitio</h4>
+          <div class="badges">
+            <ul>
+              <li>Wordpress</li>
+              <li>JavaScript</li>
+              <li>PageLayer</li>
+            </ul>
+          </div>
+          <p>hice esto con esto otro y eosot</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contenedor">
+        <h4>©2022-2024 Pablo Cruz</h4>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
