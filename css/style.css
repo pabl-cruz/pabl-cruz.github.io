@@ -96,6 +96,7 @@ footer{
    width: -webkit-fill-available;
    width: 100%; /* Para navegadores que no usan chromium*/
    margin-top: 1rem;
+   bottom: -50px;
 }
 
 button{
@@ -128,7 +129,7 @@ button:active{
    display: grid;
    grid-template-columns: 2fr 1fr;
    grid-gap: 42px;
-   margin: 3.5vh auto;
+   margin: 7vh auto;
    width: 75%;
 }
 
@@ -364,6 +365,32 @@ button:active{
  }
 
 
+@media screen and (max-width: 500px){
+
+   #proyects .titles{
+      top: 7rem;
+      left: 0.5rem;
+   }
+   
+   .slides img{
+      height: 16rem;
+   }
+
+   .badges{
+      padding: 0 15px 0;
+   }
+   .badges li{
+      font-size: 12px;
+   }
+}
+
+@media screen and (min-width: 501px) {
+   #proyects .titles{
+      top: 19rem;
+      left: 0.5rem;
+   }
+}
+
  @media screen and (max-width: 670px){
    #title{
       flex-direction: column;
@@ -373,6 +400,15 @@ button:active{
    }   
  }
 
+
+@media screen and (min-width: 1168px){
+   #proyects .titles{
+      top: 13rem;
+      h3{
+         font-size: 32px;
+      }
+   }
+}
 
  @media screen and (max-width: 1199px){
    .wrapper{
@@ -413,6 +449,9 @@ button:active{
    .modal-content{
       width: 80%;
    }
+   h3{
+      font-size: 24px;
+   }
  }
 
 
@@ -444,13 +483,6 @@ button:active{
       padding-bottom: 1rem;
       top: -1rem;
    }
-
-   #proyects .titles{
-      top: 13rem;
-      h3{
-         font-size: 24px;
-      }
-   }
  }
 
 @media screen and (min-width: 1281px){
@@ -458,6 +490,11 @@ button:active{
       font-size: 24px;
       margin-block-start: 0.2!important;
    };
+
+   h3{
+      font-size: 32px;
+   }
+
    .sub-info ul > li{
          font-size: 18px;
    }
@@ -465,11 +502,15 @@ button:active{
    #proyects{
       height: 36rem;
    }
+
+   #proyects .titles{
+      top: 16rem;
+   }
 }
 
  @media screen and (max-width: 1280px){
    .wrapper{
-      margin: 8vh auto;
+      margin: 6vh auto;
       width: 80%;
    }
    h2{
@@ -477,17 +518,10 @@ button:active{
       margin-block-start: 0.2!important;
    }
 
-   h3{
-      font-size: 32px;
-   }
-
    .sub-info{
       margin-top: 1rem;
    }
 
-   #proyects .titles{
-      top: 20rem;
-   }
 }
 
 @media screen and (max-width: 1600px){
