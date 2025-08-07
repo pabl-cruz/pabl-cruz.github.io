@@ -2,38 +2,37 @@ ScrollReveal().reveal('.row', { delay: 300 });
 ScrollReveal().reveal('footer', {delay: 600});
 
 let slideIndex = 0;
-showSlide()
+let slideTimer
+showSlide(slideIndex);
 
 
 function changeSlide(n){
     clearTimeout(slideTimer)
-    showSlide(slideIndex += n)
+    slideIndex += n;
+    showSlide(slideIndex);
+    console.log(slideIndex);
 }
 
 function showSlide(n){
     let i;
     const slides = document.getElementsByClassName("slides");
 
-    if (n === undefined){
-        slideIndex++
-    } else {
-        slideIndex = n
+    if (n >= slides.length){
+        slideIndex = 0;
     }
-
-    if(slideIndex > slides.length){ 
-        slideIndex = 1
-    }
-    if(slideIndex < 1){
-        slideIndex = slides.length;
+    if(n < 0){
+        slideIndex = slides.length -1;
     }
 
     for(i=0; i<slides.length; i++){
         slides[i].style.display = 'none'
     }
-    slideIndex++
-    if (slideIndex > slides.length){slideIndex=1}
-    slides[slideIndex-1].style.display="block";
-    slideTimer = setTimeout(showSlide, 10000)
+
+    slides[slideIndex].style.display="block";
+    slideTimer = setTimeout(() =>{
+        slideIndex++;
+        showSlide(slideIndex);
+    }, 10000)
 }
 
 
@@ -43,7 +42,7 @@ const modal = document.getElementById('siteModal')
 const modalBtn = document.getElementById('modalBtn')
 
 modalBtn.onclick = function(){
-    const siteInfoIndex = (slideIndex - 1) % siteInfo.length; //adjust slideIndex to siteInfoIndex
+    const siteInfoIndex = (slideIndex) % siteInfo.length; //adjust slideIndex to siteInfoIndex
     let techList = '';
     for(let i=0; i<siteInfo[siteInfoIndex].tecnologias.length; i++){
         techList += `<li>${siteInfo[siteInfoIndex].tecnologias[i]}</li>`  
@@ -97,4 +96,11 @@ let siteInfo = [{
     enlace: 'https://quemaduratermica.cl/',
     descripcion: 'Landing page hecho para informar y promocionar productos y kits de marca Burnshield. Con instructivos de uso, video, carácteristicas y enlaces a e-commerce para comprar los diferentes formatos y kits.',
 },
+{
+    titulo: 'Media Orange',
+    tecnologias: ['Wordpress', 'Elementor', 'JavaScript'],
+    imagen: ['/media-orange.jpg'],
+    enlace: 'https://mediaorange.cl/',
+    descripcion: 'Sitio web realizado para productora audiovisual Media Orange. Contiene información de servicios, clientes y casos de éxito, como también una sección de portafolio en la que se puede filtrar segun tipo de trabajos.',
+}
 ];

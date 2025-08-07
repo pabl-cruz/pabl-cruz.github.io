@@ -545,9 +545,14 @@ button:active{
    }  
    
    #proyects{
-      max-height: 36rem;   
+      height: 48rem;
+      .titles{
+         top: 28rem;
+      }   
    }
-}
+   .slides img{
+      height: 40rem;}
+   }
 
 /* animations */
 .fade{
