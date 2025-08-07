@@ -544,15 +544,21 @@ button:active{
       width: 12vw;
    }  
    
+} 
+   
+
+@media screen and (min-width: 1921px){
    #proyects{
       height: 48rem;
       .titles{
          top: 28rem;
       }   
    }
+
    .slides img{
       height: 40rem;}
    }
+
 
 /* animations */
 .fade{
